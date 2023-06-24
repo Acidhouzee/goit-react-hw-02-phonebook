@@ -6,7 +6,7 @@ export const Filter = ( { filterName } ) => (
         <input
             type="text"
             name="name"
-            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            pattern="^[A-Za-z\u0080-\uFFFF ']+$"
             onChange={filterName}
         />
     </div>   
